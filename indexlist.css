@@ -1,0 +1,20 @@
+.container1 {
+text-decoration: none;
+font-size: 15px;
+color: #000000;
+
+}
+.box-1 {
+    margin-right: 10px;
+    margin-bottom: 15px;
+    padding: 0px;
+}
+
+.box-1 ul{
+    list-style: none;
+}
+
+.box-1 a{
+    text-decoration:none;
+    color: #0000ff
+}
