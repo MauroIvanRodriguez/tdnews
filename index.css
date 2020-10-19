@@ -1,0 +1,19 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15P.px;
+    line-height: 1.3px;
+}
+
+.container {
+    widows: 80%;
+    margin:auto;
+}
+
+.header{
+    background-image: url(images/backimage.jpg);
+    color: #ffffff;
+    padding-top: 30px;
+    border-bottom: #000000
+    border-bottom: 3px
+    border-bototm: soli;
+}
