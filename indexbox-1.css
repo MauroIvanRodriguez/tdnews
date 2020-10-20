@@ -2,8 +2,6 @@
 text-decoration: none;
 font-size: 15px;
 color: #000000;
-
-
 }
 .box-1 {
     margin-right: 30px;
@@ -20,4 +18,8 @@ color: #000000;
     text-decoration:none;
     color: #5D5958;
    
+}
+.box-1 h3{
+    text-decoration-color: #ffd700;
+   font-size: 25px;
 }
