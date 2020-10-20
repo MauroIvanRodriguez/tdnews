@@ -1,3 +1,4 @@
+
 #showcase{
     display: flex;
     justify-content: center;
@@ -29,8 +30,11 @@
 .box-2 a{
     display: flex;
     color: #000000;
-    font-size: 18px;
+    font-size: 25px;
     text-decoration: none;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    line-height: px;
 }
 .box-2 img{
     display: flex;

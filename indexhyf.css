@@ -1,9 +1,14 @@
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15 px;
-    line-height: 18px;
-
 }
+body h2{
+    color: #420E03;
+    font-size: 35px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
 .containergral {
     width: 90%;
     margin:auto;
@@ -12,31 +17,30 @@ body{
 header{
     background-color: #000000;
     background-size: 80px;
+    width: auto;
     padding-top: 30px;
     margin-bottom: 50px;
+    height: 150px;
 }
-
+.header-superior {
+    display: flex;
+    align-items: center;
+    border: 0px;
+    margin-bottom: 30px;
+}
 header a{
     text-decoration: none;
-    text-transform: uppercase;
+
     color: #ffffff
 
 }
 .header-superior img{
     display:flex;
-    height: 200px;
-    width: 200px;
-    position: center;
-    margin:0px;
+    height: 90px;
+    width: 150px;
+    margin-left:500px;
     padding-top:0px;
-}
-
-.header-superior {
-    display: flex;
-    justify-content:flex-end ;
-    align-items: center;
-    border: 0px;
-    margin: 00px;
+   
 }
 
 .header-superior a{
@@ -48,6 +52,7 @@ header a{
 
 }
 .navbar {
+    text-transform: uppercase;  text-transform: uppercase;
     display: inline;
     text-decoration: none;
     align-items: center;
