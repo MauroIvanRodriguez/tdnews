@@ -2,8 +2,13 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15 px;
     line-height: 18px;
-}
 
+}
+.containergral {
+    width: 90%;
+    margin:auto;
+
+}
 header{
     background-color: #000000;
     background-size: 80px;
@@ -17,28 +22,21 @@ header a{
     color: #ffffff
 
 }
-.container {
-    width: 80%;
-    margin:auto;
-
-
-}
-
-.conteiner-top {
-
-     size: 12px;
-}
 .header-superior img{
     display:flex;
     height: 200px;
     width: 200px;
     position: center;
+    margin:0px;
+    padding-top:0px;
 }
 
 .header-superior {
     display: flex;
     justify-content:flex-end ;
     align-items: center;
+    border: 0px;
+    margin: 00px;
 }
 
 .header-superior a{
@@ -62,5 +60,31 @@ header a{
 }
 
 .navbar li{
-    display: inline
+    display: inline;
+    padding-left:90px;
+    padding-right: 50px;
+    padding-top: 0px;
+    text-decoration: underline;
+    margin-bottom: 25px;
+    margin-top:0px;
+}
+#main-footer{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+#showcase {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom:2px;
+    border-color: #000000;
+    border-style: solid;
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+    margin-top:40px;
 }

@@ -1,0 +1,45 @@
+.box-3 {
+    line-height: 20px;
+    flex:2;
+}
+
+.redsocial {
+    display: flex;
+    justify-content: flex-end;
+}
+.redsocial img{
+ height: 40px;
+ width: 50px;
+ display: flex;
+ 
+}
+.subscribe {
+    display: flex;
+    line-height: 20px;
+    margin-top: 25px;
+    padding: 4px;
+    border-color:#000000;
+    border-style: solid;
+    border: 3px;
+}
+.publicity-space{
+    display: flex;
+}
+.button-1 {
+    background-color: #FB4D3D;
+    color: #FFFFFF;
+    padding: 0px 10px;
+    margin: 20px 8px 50px 0px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.button-2{
+    background-color: #FB4D3D;
+    color: #FFFFFF;
+    padding: 5px;
+    margin: 20px 8px 40px 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+}
