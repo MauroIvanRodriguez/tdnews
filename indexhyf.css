@@ -1,5 +1,6 @@
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 body h2{
     color: #420E03;
@@ -15,14 +16,15 @@ body h2{
 
 }
 header{
-    background-color: #000000;
-    background-size: 80px;
+
     width: auto;
-    padding-top: 30px;
+    padding-top: 0px;
     margin-bottom: 50px;
     height: 150px;
 }
 .header-superior {
+    background-color: #000000;
+    background-size: 80px;
     display: flex;
     align-items: center;
     border: 0px;
@@ -30,9 +32,7 @@ header{
 }
 header a{
     text-decoration: none;
-
-    color: #ffffff
-
+    color:#000000;
 }
 .header-superior img{
     display:flex;
@@ -52,7 +52,7 @@ header a{
 
 }
 .navbar {
-    text-transform: uppercase;  text-transform: uppercase;
+    text-transform: uppercase;  
     display: inline;
     text-decoration: none;
     align-items: center;
@@ -65,11 +65,15 @@ header a{
 }
 
 .navbar li{
+    background-color: #ffd700;
+    background-size: 90px;
     display: inline;
     padding-left:90px;
+    padding-bottom: 15px;
     padding-right: 50px;
-    padding-top: 0px;
+    padding-top: 27px;
     text-decoration: underline;
+    color: #000000;
     margin-bottom: 25px;
     margin-top:0px;
 }
@@ -85,11 +89,17 @@ header a{
     border-left: 0px;
     border-right: 0px;
     border-bottom:2px;
-    border-color: #000000;
+    border-color: #ffd700;
     border-style: solid;
 }
 .container1{
     display: flex;
     flex-direction: row;
     margin-top:40px;
+}
+@media(max-width: 600px){
+.container1 {
+    display: flex;
+    flex-direction: column;
+}
 }
