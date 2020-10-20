@@ -3,11 +3,22 @@
     flex:2;
     display: flex;
     flex-direction: column;
+
+}
+.subbox-3{
+    background-color:  #ffd700;
+    padding-bottom: 50px;
+    margin: 0px;
+    border: solid;
+    border: 30px;
+    border-color: #000000;
 }
 
 .redsocial {
     display: flex;
     justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 .redsocial img{
  height: 40px;
