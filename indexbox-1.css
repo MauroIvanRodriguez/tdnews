@@ -1,8 +1,9 @@
 .container1 {
-text-decoration: none;
-font-size: 15px;
-color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+    color: #000000;
 }
+
 .box-1 {
     margin-right: 30px;
     margin-bottom: 15px;
@@ -11,15 +12,33 @@ color: #000000;
     flex:2;
     text-transform: uppercase;
 }
+
 .box-1 li{
     margin-left:0px;
 }
+
 .box-1 a{
     text-decoration:none;
     color: #5D5958;
-   
+    font-size: 13px;
 }
+
 .box-1 h3{
     text-decoration-color: #ffd700;
-   font-size: 25px;
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 767px){
+h3{
+    margin: 15px 0px 5px 0px;
+
+}
+.box-1 h3{
+    font-size: 21px;
+
+}
+.box-1 a{
+    font-size: 13px;
+}
 }

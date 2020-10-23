@@ -2,14 +2,16 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+
 body h2{
     color: #420E03;
     font-size: 35px;
     text-transform: uppercase;
     display: flex;
-    justify-content: center;
-    margin: 20px;
+    justify-content: flex-start;
+    margin: 20px 20px 20px 0px;
 }
+
 body h4{
     font-size: 20px;
     color: #000000;
@@ -18,13 +20,14 @@ body h4{
     display: flex;
     justify-content: center;
 }
-header{
 
+header{
     width: auto;
     padding-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     height: 150px;
 }
+
 .header-superior {
     background-color: #000000;
     background-size: 180px;
@@ -33,17 +36,18 @@ header{
     border: 0px;
     margin-bottom: 30px;
 }
+
 header a{
     text-decoration: none;
     color:#000000;
 }
+
 .header-superior img{
     display:flex;
     height: 120px;
     width: 130px;
-    margin-left:500px;
-    padding-top:0px;
-   
+    margin-left:300px;
+    padding-top:0px; 
 }
 
 .header-superior a{
@@ -51,16 +55,15 @@ header a{
     font-size: 13px;
     font-weight: bold;
     justify-content: flex-end;
- 
-
 }
+
 .navbar {
     text-transform: uppercase;  
     display: inline;
     text-decoration: none;
     align-items: center;
- 
 }
+
 .navbar ul{
     background-color: #ffd700;
     margin-top: -20px;
@@ -88,6 +91,7 @@ header a{
     font-size: 50px;
     display: none;
 }
+
 .hamburguer:focus {
     outline:none;
 }
@@ -95,16 +99,16 @@ header a{
 .containergral {
     width: 90%;
     margin:auto;
-
 }
+
 #main-footer{
     background-color: #000000;
     color: #ffffff;
     text-align: center;
     padding: 10px;
     font-size: 12px;
-
 }
+
 #showcase {
     border-top: 0px;
     border-left: 0px;
@@ -113,22 +117,49 @@ header a{
     border-color: #ffd700;
     border-style: solid;
 }
+
 .container1{
     display: flex;
     flex-direction: row;
     margin-top:40px;
 }
+@media screen and (max-width: 1250px){
+#showcase h1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    margin:0px 0px 20px;
+}
+.navbar li{
+    padding-left: 20px;
+    padding-right:10px;
+}
+.header-superior img{
+    margin: 0px;
+    height: 70px;
+    width: 80px;
+}
+.header-superior a{
+    font-size: 8px;
+}
 
+}
 @media screen and (max-width: 767px){
 .container1 {
     display: flex;
     flex-direction: column;
+}
+#showcase h1{
+    font-size:25px;
 }
 .box-1{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    order:2;
 }
 .navbar ul{
     display: none;
@@ -143,11 +174,5 @@ header a{
     display: flex;
     justify-content: flex-start;
     margin: 0px;
-}
-.box-3 {
-    display: flex;
-    flex-direction: row;
-}
-
 }
 }
