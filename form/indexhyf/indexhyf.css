@@ -1,0 +1,156 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+body h2{
+    color: #420E03;
+    font-size: 35px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 20px 20px 0px;
+}
+
+body h4{
+    font-size: 20px;
+    color: #000000;
+    margin:0px;
+    padding:0px 5px 0px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    width: auto;
+    padding-top: 0px;
+    margin-bottom: 20px;
+    height: 150px;
+}
+
+.header-superior {
+    background-color: #000000;
+    background-size: 180px;
+    display: flex;
+    align-items: center;
+    border: 0px;
+    margin-bottom: 30px;
+}
+
+header a{
+    text-decoration: none;
+    color:#000000;
+}
+
+.header-superior img{
+    display:flex;
+    height: 120px;
+    width: 130px;
+    margin-left:300px;
+    padding-top:0px; 
+}
+
+.header-superior a{
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    justify-content: flex-end;
+}
+
+
+.containergral {
+    width: 90%;
+    margin:auto;
+}
+
+#showcase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#showcase p{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;   
+}
+
+#showcase h1 {
+    display: flex;
+    font-size: 40px;
+    margin-top: 15px;
+    border-bottom: red;
+}
+
+#main-footer{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+#showcase {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom:2px;
+    border-color: #ffd700;
+    border-style: solid;
+}
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    margin-top:40px;
+}
+@media screen and (max-width: 1250px){
+#showcase h1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    margin:0px 0px 20px;
+}
+
+.header-superior img{
+    margin: 0px;
+    height: 70px;
+    width: 80px;
+}
+.header-superior a{
+    font-size: 8px;
+}
+
+}
+@media screen and (max-width: 767px){
+.container1 {
+    display: flex;
+    flex-direction: column;
+}
+#showcase h1{
+    font-size:25px;
+}
+.box-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    order:2;
+}
+.navbar ul{
+    display: none;
+    
+}
+.hamburguer{
+    display: block;
+    background-color: #000000;
+}
+.header-superior img{
+    margin:auto;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+}
+}
