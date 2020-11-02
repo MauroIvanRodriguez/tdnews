@@ -15,7 +15,7 @@ var city = document.getElementById("city");
 var postalCode = document.getElementById("pc");
 var dni = document.getElementById("dni");
 
-//NAME VALIDATION
+// NAME VALIDATION
 fullName.addEventListener("blur", nameValidation);
 
 function nameValidation (e){
@@ -23,18 +23,16 @@ function nameValidation (e){
     var textOfName = e.target.value;
 
     if (textOfName.length<6 || textOfName.indexOf(" ")<0 ){
-        //console.log('lenght: '+textOfName.length),
-        //console.log('index del espacio:' + textOfName.indexOf(' '));
         var errorText = document.getElementById("nameError");
         errorText.innerHTML = "<p> Error </p>";
-        errorText.style.backgroundColor = "red";
+        errorText.style.backgroundColor = "#FF0000";
 
     }
     else{
 
         var errorText = document.getElementById("nameError");
         errorText.innerHTML = "<p>OK!</p>";
-        errorText.style.backgroundColor = "green";
+        errorText.style.backgroundColor = "#008000";
     }
 }
 
@@ -47,10 +45,7 @@ function emailValidation (e){
     var textOfEmail = e.target.value;
 
     if (textOfEmail.indexOf(' ')>0 || textOfEmail.indexOf('@')<0 || textOfEmail.indexOf('.')<0 || textOfEmail.indexOf('.') == (textOfEmail.length-1) ){
-        //console.log('index del arroba:' + textOfEmail.indexOf('@')),
-        //console.log('index del espacio:' + textOfEmail.indexOf(' ')),
-        //console.log('index del punto:' + textOfEmail.indexOf('.')),
-        //console.log('error');
+
         var errorText = document.getElementById('emailError');
         errorText.innerHTML = '<p> Error </p>';
 
@@ -60,3 +55,109 @@ function emailValidation (e){
         errorText.innerHTML = '<p>OK!</p>';
     }
 }
+
+// PASSWORD VALIDATION
+
+password.addEventListener("blur", passwordValidation);
+
+var textOfPassword = "";
+
+function passwordValidation (e){
+    
+    textOfPassword = e.target.value;
+
+    console.log(textOfPassword);
+    
+    var letters="abcdefghyjklmnñopqrstuvwxyz";
+
+    function hasLetters(textOfPassword){
+        textOfPassword = textOfPassword.toLowerCase();
+        for(i=0; i<textOfPassword.length; i++){
+            if (letters.indexOf(textOfPassword.charAt(i),0)!=-1){
+                return 1;
+            }
+        }
+        return 0;
+    }
+    
+    var num="1234567890";
+
+    function hasNumbers(textOfPassword){
+        textOfPassword = textOfPassword.toLowerCase();
+        for(i=0; i<textOfPassword.length; i++){
+            if (num.indexOf(textOfPassword.charAt(i),0)!=-1){
+                return 1;
+            }
+        }
+        return 0;
+    }
+    if (textOfPassword.length<8 || textOfPassword.indexOf(" ")>0 || hasLetters(textOfPassword)==0 || hasNumbers(textOfPassword)==0 ){
+
+        var errorText = document.getElementById("passwordError");
+        errorText.innerHTML = "<p> Error </p>";
+
+    }
+    else{
+        var errorText = document.getElementById("passwordError");
+        errorText.innerHTML = "<p>OK!</p>";
+    }
+}
+// REWRITE PASSWORD VALIDATION
+
+repassword.addEventListener("blur", repasswordValidation);
+
+var textOfRepassword = "";
+
+function repasswordValidation (e){
+    
+    textOfRepassword = e.target.value;
+    
+    if (textOfRepassword != textOfPassword ){
+        var errorText = document.getElementById("repasswordError");
+        errorText.innerHTML = "<p>  Error </p>";
+
+    }
+    else{
+        var errorText = document.getElementById("repasswordError");
+        errorText.innerHTML = "<p>OK!</p>";
+    }
+}
+//AGE VALIDATION
+
+age.addEventListener("blur", ageValidation);
+
+function ageValidation (e){
+    
+    var textOfAge = e.target.value;
+    if (textOfAge<18 ){
+        console.log(textOfAge);
+        var errorText = document.getElementById("ageError");
+        errorText.innerHTML = "<p> You are younger </p>";
+
+    }
+    else{
+
+        var errorText = document.getElementById("ageError");
+        errorText.innerHTML = "<p>OK!</p>";
+    }
+}
+//HONE VALIDATION
+
+phone.addEventListener("blur", phoneValidation);
+
+function phoneValidation (e){
+    
+    var textOfPhone = e.target.value;
+
+    if (textOfPhone.length=10 && textOfPhone.indexOf(" ")<0 && textOfPhone.indexOf("-")<0 && textOfPhone.startsWith("3")){
+        console.log(textOfPhone);
+        var errorText = document.getElementById("telephoneError");
+        errorText.innerHTML = "<p> cc </p>";
+
+    }
+    else{
+        var errorText = document.getElementById("telephoneError");
+        errorText.innerHTML = "<p>no</p>";
+    }
+}
+
