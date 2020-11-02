@@ -19,25 +19,14 @@ var dni = document.getElementById("dni");
 //ONBLUR - NAME VALIDATION
 
 fullName.addEventListener("blur", nameValidation);
-
-function nameValidation (e){
-    
-    var textOfName = e.target.value;
-
-    if (textOfName.length<6 || textOfName.indexOf(" ")<0 ){
-        //console.log("lenght: "+textOfName.length),
-        //console.log("index del espacio:" + textOfName.indexOf(" "));
-        var errorText = document.getElementById("nameError");
-        errorText.innerHTML = "<p> *Error </p>";
-
+    function nameValidation(){
+ 
+    alert ("onblur");
     }
-    else{
 
-        var errorText = document.getElementById("nameError");
-        errorText.innerHTML = "<p>✔</p>";
-    }
-}
 
+
+ 
 //ONBLUR - EMAIL VALIDATION
 
 email.addEventListener("blur", emailValidation);
