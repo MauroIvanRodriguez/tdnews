@@ -31,3 +31,10 @@
 .button p{
     margin-right: 30px;
 }
+
+#nameError {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    padding: 0px;
+}
