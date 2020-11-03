@@ -14,6 +14,7 @@ var adress = document.getElementById("adress");
 var city = document.getElementById("city");
 var postalCode = document.getElementById("pc");
 var dni = document.getElementById("dni");
+var buttonOne = document.getElementById("button-1");
 
 // NAME VALIDATION
 fullName.addEventListener("blur", nameValidation);
@@ -31,7 +32,7 @@ function nameValidation (e){
     else{
 
         var errorText = document.getElementById("nameError");
-        errorText.innerHTML = "<p>OK!</p>";
+        errorText.innerHTML = "<p>OK</p>";
         errorText.style.backgroundColor = "#008000";
     }
 }
@@ -242,7 +243,7 @@ function postalCodeValidation (e){
         errorText.innerHTML = "<p>OK!</p>";
     }
 }
-//NI VALIDATION
+//DNI VALIDATION
 
 dni.addEventListener("blur", dniValidation);
 
@@ -259,6 +260,45 @@ function dniValidation (e){
 
         var errorText = document.getElementById("dniError");
         errorText.innerHTML = "<p> Error</p>";
-        function divColorChange() {errorText.style.color = '#FF0000';}
+    }
+}
+
+// FORM COMPLETED
+
+
+function recheck (e){
+    if (fullName.value == "" || email.value== "" || password.value== "" ||repassword.value== "" || age.value == "" || phone.value== "" || adress.value== "" || city.value== ""|| postalCode.value== "" || dni.value== "" ){
+        if (fullName.value ==""){
+            fullName.focus ();
+        }else if(email.value== ""){ 
+            email.focus();
+        }else if(password.value== ""){ 
+            password.focus();
+        }else if(repassword.value== ""){ 
+            repassword.focus();
+        }else if(age.value== ""){ 
+            age.focus();
+        }else if(phone.value== ""){ 
+            phone.focus();
+        }else if(adress.value== ""){ 
+            adress.focus();
+        }else if(city.value== ""){ 
+            city.focus();
+        }else if(postalCode.value== ""){ 
+            postalCode.focus();
+        }else if(dni.value== ""){ 
+            dni.focus();
+            alert("Please cheack the gaps fills")
+        }else{
+            alert ("all the gaps fill properly")
+        }
+    }
+}
+buttonOne.onclick = showResult
+function showResult (){
+    if (textOfName.value == null || fullName.value === "OK") {
+        alert ("ok");
+    }else{
+        alert ("no");
     }
 }
