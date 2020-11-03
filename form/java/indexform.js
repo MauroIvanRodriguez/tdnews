@@ -152,12 +152,113 @@ function phoneValidation (e){
     if (textOfPhone.length=10 && textOfPhone.indexOf(" ")<0 && textOfPhone.indexOf("-")<0 && textOfPhone.startsWith("3")){
         console.log(textOfPhone);
         var errorText = document.getElementById("telephoneError");
-        errorText.innerHTML = "<p> cc </p>";
+        errorText.innerHTML = "<p> OK! </p>";
 
     }
     else{
         var errorText = document.getElementById("telephoneError");
-        errorText.innerHTML = "<p>no</p>";
+        errorText.innerHTML = "<p> error </p>";
     }
 }
 
+// ADRESS VALIDATION
+
+adress.addEventListener("blur", adressValidation);
+
+var textOfAdress = "";
+
+function adressValidation (e){
+    
+    textOfAdress = e.target.value;
+
+    var letters="abcdefghyjklmnñopqrstuvwxyz";
+
+    function hasLetters(textOfAdress){
+        textOfAdress = textOfAdress.toLowerCase();
+        for(i=0; i<textOfAdress.length; i++){
+            if (letters.indexOf(textOfAdress.charAt(i),0)!=-1){
+                return 1;
+            }
+        }
+        return 0;
+    }
+    
+    var num="1234567890";
+
+    function hasNumbers(textOfAdress){
+        textOfAdress = textOfAdress.toLowerCase();
+        for(i=0; i<textOfAdress.length; i++){
+            if (num.indexOf(textOfAdress.charAt(i),0)!=-1){
+                return 1;
+            }
+        }
+        return 0;
+    }
+    if (textOfAdress.length<5 || textOfAdress.indexOf(" ")<0 || hasLetters(textOfAdress)==0 || hasNumbers(textOfAdress)==0 ){
+        var errorText = document.getElementById('adressError');
+        errorText.innerHTML = "<p> Error </p>";
+
+    }
+    else{
+        var errorText = document.getElementById('adressError');
+        errorText.innerHTML = "<p> OK!</p>";
+    }
+}
+// CITY VALIDATION
+
+city.addEventListener("blur", cityValidation);
+
+function cityValidation (e){
+    
+    var textOfCity = e.target.value;
+
+    if (textOfCity.length<3 ){
+        var errorText = document.getElementById("cityError");
+        errorText.innerHTML = "<p> Error </p>";
+
+    }
+    else{
+
+        var errorText = document.getElementById("cityError");
+        errorText.innerHTML = "<p>OK!</p>";
+    }
+}
+// POSTALCODE VALIDATION
+
+postalCode.addEventListener("blur", postalCodeValidation);
+
+function postalCodeValidation (e){
+    
+    var textOfPostalCode = e.target.value;
+
+    if (textOfPostalCode.length<3 ){
+        var errorText = document.getElementById("pCError");
+        errorText.innerHTML = "<p> Error </p>";
+
+    }
+    else{
+
+        var errorText = document.getElementById("pcError");
+        errorText.innerHTML = "<p>OK!</p>";
+    }
+}
+//NI VALIDATION
+
+dni.addEventListener("blur", dniValidation);
+
+function dniValidation (e){
+    
+    var textOfDni = e.target.value;
+
+    if (textOfDni.length==8 || textOfDni.length==7 ){
+        var errorText = document.getElementById("dniError");
+        errorText.innerHTML = "<p> OK! </p>";
+
+    }
+    else{
+
+        var errorText = document.getElementById("dniError");
+        errorText.innerHTML = "<p> Error</p>";
+        function divColorChange() {errorText.style.color = '#FF0000';}
+    }
+}
