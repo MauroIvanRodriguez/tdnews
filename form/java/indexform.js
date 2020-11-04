@@ -135,6 +135,7 @@ function repasswordValidation (e){
         errorText.innerHTML = "<p> OK! </p>";
         var fourOp = 2;
         console.log(fourOp);
+    }
 }
 
 //AGE VALIDATION
@@ -326,7 +327,7 @@ function recheck (e){
             postalCode.focus();
         }else if(dni.value== ""){ 
             dni.focus();
-        }else{
+    }else{
             alert ("all the gaps fill properly");
         }
     }
@@ -335,9 +336,10 @@ function recheck (e){
 buttonOne.onclick = showResult;
 function showResult (){
     if(oneOp == 2 && twoOp == 2 && threeOp == 2 && fourOp == 2 && fiveOp == 2 && sixOp == 2 && sevenOp == 2 && eightOp == 2 && nineOp == 2 && tenOp == 2){
-        alert ("ready to subscribe");
+        alert (textOfName,textOfEmail,textOfPhone,textOfPostalCode );
     }else{
-        alert ("check if the gaps are filled");
+        alert ();
     }
 }
+
 
